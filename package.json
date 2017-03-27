@@ -1,12 +1,52 @@
 {
-  "name": "openshift-cartridge-nodejs-template",
+  "name": "algebraclub",
   "version": "1.0.1",
-  "description": "Custom Node.js cartridge for OpenShift - sample application",
+  "description": "The Algebra Club site",
   "private": true,
   "main": "start.js",
   "scripts": {
-    "start": "node --use_strict start.js"
+    "start": "node --use_strict ./start.js"
   },
-  "author": "Ionut-Cristian Florescu <ionut.florescu@gmail.com>",
-  "license": "ISC"
+  "author": "Marat Agliulin",
+  "license": "Copyright 2016 Marat Agliulin",
+  "devDependencies": {
+    "binary-file": "latest",
+    "binary-string": "latest",
+    "bower": "latest",
+    "bower-update-all": "latest",
+    "del": "latest",
+    "eslint": "latest",
+    "eslint-config-google": "latest",
+    "eslint-config-standard": "latest",
+    "eslint-plugin-promise": "latest",
+    "eslint-plugin-standard": "latest",
+    "gulp": "latest",
+    "gulp-autoprefixer": "latest",
+    "gulp-babel": "latest",
+    "gulp-bower": "latest",
+    "gulp-changed": "latest",
+    "gulp-concat": "latest",
+    "gulp-cssmin": "latest",
+    "gulp-eslint": "latest",
+    "gulp-imagemin": "latest",
+    "gulp-livereload": "latest",
+    "gulp-rename": "latest",
+    "gulp-sass": "latest",
+    "gulp-stylelint": "latest",
+    "gulp-uglify": "latest",
+    "stylelint-config-standard": "^16.0.0"
+  },
+  "dependencies": {
+    "body-parser": "latest",
+    "cookie-parser": "latest",
+    "debug": "latest",
+    "express": "latest",
+    "htmlparser2": "latest",
+    "pug": "latest",
+    "lodash": "latest",
+    "morgan": "latest",
+    "path": "latest",
+    "serve-favicon": "latest",
+    "compression":"latest"
+  }
 }

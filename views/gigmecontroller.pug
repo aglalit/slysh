@@ -1,0 +1,6 @@
+extends layout
+block content
+  button#play Start
+  input#frequency(type="range" min='1' max='2000' onchange="setFrequency()" )
+  select#inputportselector
+  script(src="/js/gigmecontroller.js")

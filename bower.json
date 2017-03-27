@@ -1,0 +1,18 @@
+{
+  "name": "algebraclub",
+  "dependencies": {
+    "angular": "^1.5.3",
+    "angular-bootstrap": "^1.2.5",
+    "bootstrap": "3.3.4",
+    "font-awesome": "^4.5.0",
+    "jquery": "^2.2.2",
+    "grunt": "^0.4.5"
+  },
+  "resolutions": {
+    "angular": "^1.5.3",
+    "angular-bootstrap": "^1.2.5",
+    "bootstrap": "^3.3.6",
+    "font-awesome": "^4.5.0",
+    "jquery": "^2.2.2"
+  }
+}

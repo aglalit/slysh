@@ -1,0 +1,25 @@
+extends layout
+
+block content
+	main.express-albums
+		.wrapper-express-albums
+			.container-fluid
+				.row
+					.col-sm-6
+						form(action="/download" method="post")
+							label(for="album-link") Введите ссылки
+							.input-group
+								input(name="source" type="text" class="form-control" id="album-link" placeholder="Введите ссылки")
+							label(for="album-title") Введите название
+							.input-group(action="/download" method="post")
+								input(name="title" type="text" class="form-control" id="album-title" placeholder="Введите название")
+							button(class="btn btn-default" type="submit") Подтвердить
+					.col-sm-6
+						form(action="/download" method="post")
+							label(for="album-link") Введите ссылки
+							.input-group
+								input(name="source" type="text" class="form-control" id="album-link" placeholder="Введите ссылки")
+							label(for="album-title") Введите название
+							.input-group(action="/download" method="post")
+								input(name="title" type="text" class="form-control" id="album-title" placeholder="Введите название")
+							button(class="btn btn-default" type="submit") Подтвердить

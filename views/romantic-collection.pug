@@ -1,0 +1,27 @@
+extends layout
+block content
+	link(rel='stylesheet' href='/css/romantic-collection.css')
+	article
+		header
+			h1 Romantic Collection Vol.1
+		section.controls
+			.prev-track
+			.trackcontrols
+				.display
+				.maincontrols
+					.play-stop
+					.ranges
+						.range
+							label(for="volume") Volume
+							input#volume(type="range" min="0" max="100" value="80" oninput="changeVolume(this);")
+						.range
+							label(for="speed") Speed
+							input#speed(type="range" min="-1000" max="1000" value="0" step="100" oninput="changeSpeed(this);")
+				.toggle-original Show source
+				.original-player
+					audio(controls preload="metadata" onplay="preventMultiple()" loop)
+						source(src="")
+					.display
+						span
+			.next-track
+		script(src="/js/romantic-collection.js")

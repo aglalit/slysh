@@ -1,0 +1,125 @@
+body {
+  margin: 0; }
+
+.controls {
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  min-width: 380px;
+  max-width: 600px;
+  background-color: #e6450f; }
+
+.next-track,
+.prev-track {
+  -ms-flex-item-align: stretch;
+  -ms-grid-row-align: stretch;
+  align-self: stretch;
+  width: 40px;
+  background: gray; }
+
+header {
+  width: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 40px 0; }
+
+h1 {
+  margin: auto; }
+
+.trackcontrols {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-positive: 1;
+  flex-grow: 1; }
+
+.maincontrols {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+  justify-content: space-around; }
+
+.controls .play-stop {
+  margin: 30px;
+  box-sizing: border-box;
+  height: 20px;
+  width: 40px;
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-left: 25px solid gray; }
+
+.controls .play-stop.stop {
+  border: 20px solid white; }
+
+.ranges {
+  -ms-flex-positive: 0.7;
+  flex-grow: 0.7;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  padding: 20px 10px; }
+
+.range {
+  padding: 10px 0; }
+
+.controls label {
+  display: block;
+  font-family: sans-serif;
+  padding: 5px; }
+
+input[type='range'] {
+  -webkit-appearance: none;
+  border-radius: 15px;
+  border: 1px solid #525252;
+  background: #222;
+  width: 100%;
+  min-width: 200px; }
+
+input[type='range']:focus {
+  outline: none; }
+
+input[type='range']::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  background-color: #444;
+  width: 25px;
+  border-radius: 50%;
+  height: 25px; }
+
+.toggle-original {
+  padding: 20px;
+  font-family: sans-serif;
+  font-size: 15px;
+  text-align: center;
+  background: black;
+  color: white;
+  vertical-align: middle; }
+
+.original-player {
+  padding: 10px 5px 0;
+  display: none;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+
+.original-player audio {
+  margin: auto; }
+
+.display {
+  padding: 10px;
+  text-align: center; }
+
+.display span {
+  font-family: sans-serif;
+  display: block;
+  box-sizing: border-box;
+  background: green;
+  padding: 5px 20px;
+  min-width: 280px; }

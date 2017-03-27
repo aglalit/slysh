@@ -1,0 +1,25 @@
+
+doctype html
+html(lang='ru')
+  head
+    title= title
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    //link(id="siteFonts", rel="stylesheet", type="text/css", href="http://www.ps-cg.biz/Files/Fonts/Fonts.css?v=50491134000")
+    // bower:css
+    //link(rel='stylesheet', href='bower_components/bootstrap/dist/css/bootstrap.min.css')
+    // endbower
+    //link(rel='stylesheet', href='built.css')
+    // bower:js
+    //script(src='bower_components/jquery/dist/jquery.min.js')
+    //script(src='bower_components/angular/angular.min.js')
+    //script(src='bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js')
+    //script(src='bower_components/bootstrap/dist/js/bootstrap.min.js')
+    // endbower
+    //script(src="built.js")
+  body
+    //include ./navbar.jade
+    block content
+    // REMOVE ON DEPLOYMENT
+    script(src="http://cdnjs.cloudflare.com/ajax/libs/html-inspector/0.8.2/html-inspector.js")
+    script HTMLInspector.inspect();
+    script(src="http://localhost:35729/livereload.js?snipver=1")

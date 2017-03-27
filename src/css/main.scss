@@ -1,0 +1,91 @@
+//sass and bootstrap vars
+@font-family-base: "Helvetica Neue",Helvetica,Arial,sans-serif;
+$font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; //
+$navbar-active-color: #0ce3ac; //
+// main and navbar
+
+.navbar-default {
+  margin-bottom: 0;
+  border-radius: 0;
+
+  .active a {
+    color: $navbar-active-color;
+  }
+
+  .navbar-toggle {
+    border-color: transparent;
+  }
+}
+
+.main-media {
+  height: 833px;
+}
+
+.navbar-default-bottom {
+  background-color: black;
+  margin-bottom: 0;
+  border-radius: 0;
+}
+
+.comingsoon {
+  margin-top: 20px;
+  margin-right: 40vw;
+  font-size: 5vw;
+  font-family: $font-family;
+  color: white;
+}
+// homepage
+
+.wrapper-homepage {
+  background-color: black;
+}
+
+.homepage {
+  margin: auto;
+  max-width: 1280px;
+  font-family: $font-family;
+  background-image: url("/img/qcolqLxdGqw.jpg");
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+// express-albums
+
+.wrapper-express-albums .container-fluid {
+  padding: 0 20px;
+}
+
+.express-albums {
+  font-family: $font-family;
+
+  #album-link,
+  #album-title {
+    margin: 10px 0;
+  }
+
+  .input-group {
+    width: 70%;
+  }
+
+  label {
+    font-size: 1.7em;
+    margin-top: 30px;
+  }
+
+  button {
+    margin-top: 20px;
+    padding: 10px;
+  }
+
+  button:hover {
+    color: black;
+  }
+
+  input {}
+}
+
+.express-albums-inputs {
+  margin: 20px;
+}
