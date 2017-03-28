@@ -6,7 +6,7 @@
 /.git.*/
 /.gitignore.*
 /.tmp/
-/.DS_Store
+.DS_Store
 /public/bower_components/
 /log/
 /node_modules/
