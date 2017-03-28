@@ -22,6 +22,7 @@
     "eslint-plugin-standard": "latest",
     "gulp": "latest",
     "gulp-autoprefixer": "latest",
+    "gulp-nodemon": "latest",
     "gulp-babel": "latest",
     "gulp-bower": "latest",
     "gulp-changed": "latest",
