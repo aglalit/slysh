@@ -1,6 +1,5 @@
 (function() {
   "use strict";
-fsdfasdfasdfas
   const http = require('http'),
     fs = require('fs'),
     path = require('path'),
