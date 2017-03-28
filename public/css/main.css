@@ -1,14 +1,28 @@
 @font-family-base : "Helvetica Neue",Helvetica,Arial,sans-serif;
-.navbar-default {
-  margin-bottom: 0;
-  border-radius: 0; }
-  .navbar-default .active a {
-    color: #0ce3ac; }
-  .navbar-default .navbar-toggle {
-    border-color: transparent; }
-
 .main-media {
   height: 833px; }
+
+.nav-main {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+
+.nav-main__title {
+  text-decoration: none;
+  padding: 10px 20px;
+  padding: 10px 15% 10px 10px;
+  display: block; }
+
+.nav-main__item {
+  text-decoration: none;
+  padding: 10px 20px;
+  white-space: nowrap;
+  display: block; }
 
 .navbar-default-bottom {
   background-color: black;
@@ -54,3 +68,9 @@
 
 .express-albums-inputs {
   margin: 20px; }
+
+@media screen and (max-width: 352px) {
+  .nav-main__item, .nav-main__title {
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    padding: 10px 20px; } }

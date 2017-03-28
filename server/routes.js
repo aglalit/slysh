@@ -3,7 +3,7 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('homepage', { title: 'the@algebra.club' });
+  res.render('homepage', { title: 'СЛЫШЬ' });
 });
 
 router.get('/download', function(req, res, next) {

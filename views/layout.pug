@@ -16,8 +16,9 @@ html(lang='ru')
     //script(src='bower_components/bootstrap/dist/js/bootstrap.min.js')
     // endbower
     //script(src="built.js")
+    link(rel='stylesheet', href='/css/main.css')
   body
-    //include ./navbar.jade
+    include ./navbar.pug
     block content
     // REMOVE ON DEPLOYMENT
     script(src="https://cdnjs.cloudflare.com/ajax/libs/html-inspector/0.8.2/html-inspector.js")

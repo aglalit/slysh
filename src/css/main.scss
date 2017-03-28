@@ -4,21 +4,30 @@ $font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; //
 $navbar-active-color: #0ce3ac; //
 // main and navbar
 
-.navbar-default {
-  margin-bottom: 0;
-  border-radius: 0;
-
-  .active a {
-    color: $navbar-active-color;
-  }
-
-  .navbar-toggle {
-    border-color: transparent;
-  }
-}
 
 .main-media {
   height: 833px;
+}
+
+.nav-main {
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.nav-main__title {
+  text-decoration: none;
+  padding:10px 20px;
+  padding: 10px 15% 10px 10px;
+  display:block;
+}
+
+.nav-main__item {
+  text-decoration: none;
+  padding:10px 20px;
+  white-space: nowrap;
+  display:block;
 }
 
 .navbar-default-bottom {
@@ -88,4 +97,11 @@ $navbar-active-color: #0ce3ac; //
 
 .express-albums-inputs {
   margin: 20px;
+}
+
+@media screen and (max-width:352px) {
+  .nav-main__item, .nav-main__title {
+    flex-basis: 100%;
+    padding: 10px 20px;
+  }
 }
